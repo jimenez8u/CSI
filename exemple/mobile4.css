@@ -1,0 +1,123 @@
+header
+{	
+	margin:auto;
+	text-align:center;
+}
+<style>
+body {
+    padding-top: 500px;
+}
+
+html{
+		background-image:url(fond.jpg);
+		background-size:cover cover;
+		
+		
+}
+	  
+h1{
+	text-align:center;
+	padding-top:2%;
+}
+
+h2{
+	text-align:center;
+	padding-top:2%;
+}
+
+.form_col {
+    display: inline-block;
+    text-align: right;
+}
+
+.form_etu{
+	text-align:right;
+	margin-right:15%;
+}
+
+.form_etu2{
+	text-align:right;
+	margin-right:15%;
+}
+
+table{
+	padding:5%;
+	border: 1px solid black;
+	margin-left:25%;
+	margin-right:20%;
+	background-color:#CCC;
+}
+
+table.table1{
+margin: 1%;
+padding:3%; 
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+input {
+	border: 1px solid #CCC;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+	float:right;
+}
+
+.btn_v{
+	float:right;
+	margin-right:45%;
+}
+
+p{
+	float:center;
+	padding-left:5%;
+}
+
+fieldset{
+	background-color:#CCC;
+	border:1px solid navy;
+}
+
+.cadre{
+	text-align:center;
+}
+
+.right{
+	float:right;
+	margin-right:30%;
+}
+
+p.etu{
+	text-align:center;
+	
+}
+
+p.warning{
+	color:blue;
+	float:center;
+	padding-left:10%;
+}
+
+p.gp{
+	color:red;
+	float:center;
+	padding-left:12%;
+}
+
+p.left{
+	text-align:center;
+}
+
+.btn_de{
+	float:right; 
+	margin-right:41%;
+}
+
+.btn_decad{
+	float:left;
+	margin-left:45%;
+}
+
+.img{
+	float:right;
+}
