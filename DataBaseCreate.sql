@@ -1,5 +1,5 @@
 CREATE TABLE etudiant (
-id_etu	INTEGER NOT NULL,
+id_etu	INTEGER NOT NULL AUTO_INCREMENT,
 nom	VARCHAR(100) NOT NULL,
 prenom	VARCHAR(100) NOT NULL,
 mail	VARCHAR(100) NOT NULL,
@@ -13,7 +13,7 @@ CONSTRAINT pk_cat PRIMARY KEY(nom_cat)
 );
 
 CREATE TABLE bani (
-id_etu	INTEGER NOT NULL,
+id_etu	INTEGER NOT NULL AUTO_INCREMENT,
 id_ban	INTEGER NOT NULL,
 CONSTRAINT pk_bani PRIMARY KEY(id_etu, id_ban),
 CONSTRAINT fk_bani1 FOREIGN KEY (id_etu) REFERENCES etudiant(id_etu),
@@ -21,13 +21,13 @@ CONSTRAINT fk_bani2 FOREIGN KEY (id_ban) REFERENCES etudiant(id_etu)
 );
 
 CREATE TABLE admin (
-id_adm	INTEGER NOT NULL,
+id_adm	INTEGER NOT NULL AUTO_INCREMENT,
 CONSTRAINT pk_adm PRIMARY KEY (id_adm),
 CONSTRAINT fk_adm FOREIGN KEY (id_adm) references etudiant(id_etu)
 );
 
 CREATE TABLE annonce (
-id_ann	INTEGER NOT NULL,
+id_ann	INTEGER NOT NULL AUTO_INCREMENT,
 descri	VARCHAR(250) NOT NULL,
 nom_cat	VARCHAR(100) NOT NULL,
 id_pro	INTEGER NOT NULL,
@@ -46,7 +46,8 @@ CONSTRAINT fk_ann2 FOREIGN KEY (id_pro) references etudiant(id_etu)
 );
 
 CREATE TABLE archive (
-id_arch	INTEGER NOT NULL,descri	VARCHAR(250) NOT NULL,
+id_arch	INTEGER NOT NULL AUTO_INCREMENT,
+descri	VARCHAR(250) NOT NULL,
 nom_cat	VARCHAR(100) NOT NULL,
 id_pro	INTEGER NOT NULL,
 Date_d	TIMESTAMP WITHOUT TIME ZONE,
