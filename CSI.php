@@ -22,7 +22,7 @@
 		try
 		{
 			//décommentez la ligne de code "extension=pdo_pgsql" dans le fichier de configuration php.ini de XAMPP
-			$db = new PDO("pgsql:host=localhost; port=5432; dbname=CSI_2018_Projet","postgres","admin");
+			$db = new PDO("pgsql:host=localhost; port=5433; dbname=CSI_2018_Projet","postgres","admin");
 			echo "Connexion OK <br/>";
 			
 			$requete ='select * from annonce';
@@ -35,13 +35,14 @@
 				$idproprietaire= $row[3];
 				$datedebut = $row[4];
 				$datefin = $row[5];
-				$nbmaxetu = $row[6];
-				$repeat = $row[7];
-				$nbrepeat = $row[8];
-				$frecrepeat = $row[9];
-				$adresse = $row[10];
-				$cloture = $row[11];
-				$datecloture  = $row[12];
+				$datecloture  = $row[6];
+				$nbmaxetu = $row[7];
+				$repeat = $row[8];
+				$nbrepeat = $row[9];
+				$frecrepeat = $row[10];
+				$adresse = $row[11];
+				$cloture = $row[12];
+				
 			}
 			echo "id :".$id."<br/>";
 			echo "descritpion :".$descritpion."<br/>";
@@ -49,13 +50,13 @@
 			echo "id proprietaire :".$idproprietaire."<br/>";
 			echo "datedebut :".$datedebut."<br/>";
 			echo "datefin :".$datefin."<br/>";
+			echo "datecloture :".$datecloture."<br/>";
 			echo "nbmaxetu :".$nbmaxetu."<br/>";
 			echo "repeat :".$repeat."<br/>";
 			echo "nbrepeat :".$nbrepeat."<br/>";
 			echo "frecrepeat :".$frecrepeat."<br/>";
 			echo "adresse :".$adresse."<br/>";
 			echo "cloture :".$cloture."<br/>";
-			echo "datecloture :".$datecloture."<br/>";
 			
 		}catch(PDOException $e)
 		{
