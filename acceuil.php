@@ -32,7 +32,7 @@
 			<?php
 				if(isset($_POST['Ajouter']))
 				{
-					$db = new PDO("pgsql:host=localhost; port=5433; dbname=CSI_2018_Projet","postgres","admin");
+					$db = new PDO("pgsql:host=localhost; port=5432; dbname=CSI_2018_Projet","postgres","admin");
 					
 					
 					$requete = 'SELECT mail,mdp FROM etudiant';
